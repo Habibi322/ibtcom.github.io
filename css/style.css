@@ -677,11 +677,12 @@ img, object, embed {
 }
 
 @media (max-width: 768px) {
-    /* Стили для планшетов и больших смартфонов */
+    /* Изменяем текущие стили для header */
     header .container {
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px;
+        row-gap: 10px;
     }
     
     .logo img {
@@ -692,17 +693,33 @@ img, object, embed {
         order: 1;
         width: 100%;
         text-align: center;
-        margin: 10px 0;
+        margin: 0;
     }
     
     .contact-info {
         text-align: right;
         margin-right: 0;
         font-size: 14px;
+        order: 2;
+    }
+    
+    .mobile-menu-btn {
+        order: 3;
+    }
+    
+    /* Добавляем стили для кнопки в мобильной версии */
+    .btn {
+        display: block !important; /* Переопределяем скрытие */
+        order: 4;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+        font-size: 14px;
+        margin-top: 10px;
     }
     
     nav {
-        order: 2;
+        order: 5;
         width: 100%;
         margin-top: 15px;
     }
@@ -715,4 +732,53 @@ img, object, embed {
 
 @media (max-width: 576px) {
     /* Стили для мобильных устройств */
+    .logo img {
+        height: 30px;
+    }
+    
+    .company-name p {
+        font-size: 14px;
+    }
+    
+    .contact-info {
+        font-size: 12px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 6px;
+    }
+    
+    /* Делаем кнопку плавающей для удобства на мобильных */
+    .btn.floating {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: auto;
+        padding: 12px 15px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 999;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .btn.floating span {
+        display: none; /* Скрываем текст */
+    }
+    
+    .btn.floating::before {
+        content: "☎";
+        font-size: 20px;
+    }
 }
