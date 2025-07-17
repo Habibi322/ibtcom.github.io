@@ -726,6 +726,15 @@ img, object, embed {
         font-size: 16px;
         padding: 12px 18px;
     }
+
+    #offer{
+        background-image: none;
+    }
+
+    #offer .container .block{
+        margin-left: 0;
+        border: red;
+    }
 }
 
 
@@ -882,19 +891,17 @@ img, object, embed {
         text-align: center;
     }
     
-    /* Контакты */
+
     .contacts .contact-items {
         gap: 10px;
     }
     
-    /* Блок с копирайтом */
     .company-info {
         order: 3;
         font-size: 13px;
         line-height: 1.4;
     }
     
-    /* Соцсети */
     .social {
         order: 2;
     }
