@@ -728,12 +728,14 @@ img, object, embed {
     }
 
     #offer{
+        height: auto;
         background-image: none;
     }
 
     #offer .container .block{
         margin-left: 0;
-        border: red;
+        border: 2px solid red;
+        border-radius: 8px;
     }
 }
 
@@ -910,6 +912,13 @@ img, object, embed {
         margin-bottom: 15px;
     }
 
+    #offer h3{
+        font-size:30px;
+    }
+
+    #offer p{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
