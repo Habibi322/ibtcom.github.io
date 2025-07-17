@@ -912,12 +912,42 @@ img, object, embed {
         margin-bottom: 15px;
     }
 
-    #offer h3{
-        font-size:30px;
+    #offer .container .block h3,
+    #mobile h2,
+    #how h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        word-wrap: break-word;
     }
-
-    #offer p{
-        font-size: 20px;
+    
+    /* Исправление для текста */
+    #offer .container .block p {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    
+    /* Исправление для кнопок */
+    #offer .container .block .btn,
+    #mobile .btn,
+    #how .btn {
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+        padding: 12px;
+        margin: 15px auto;
+    }
+    
+    /* Улучшение отступов */
+    #offer, #mobile, #how {
+        padding: 20px 10px;
+        margin: 10px auto;
+    }
+    
+    /* Фон для лучшей читаемости */
+    #offer .container .block {
+        background-color: rgba(255,255,255,0.9);
+        padding: 20px;
+        margin: 10px;
     }
 }
 
