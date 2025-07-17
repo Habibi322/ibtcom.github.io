@@ -779,24 +779,27 @@ img, object, embed {
         font-size: 14px;
     }
 
-    .ibtcom-title{
-        font-size: 30px;
+    #what {
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
-
+    
+    .ibtcom-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
     #what .container .icons {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        background-image: none;
-        padding-top: 0;
     }
-
+    
     #what .container .icons h3 {
         width: 100%;
-        padding: 80px 10px 10px;
-        background-size: 50px;
-        background-position: center 15px;
-        margin: 0;
+        max-width: 300px;
+        font-size: 15px;
+        padding: 60px 15px 15px;
+        min-height: auto;
     }
 
     .section-header h2{
