@@ -1028,4 +1028,102 @@ img, object, embed {
     #how h2 {
         font-size: 28px;
     }
+    #po {
+        padding: 30px 0;
+        margin-bottom: 50px;
+    }
+    
+    #po h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    #po .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    #po .container .wrap {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+    }
+    
+    #po .container .item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #po .container .item h3 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    #po .container .item .btn {
+        display: block;
+        width: 80%;
+        margin: 15px auto 0;
+        font-size: 14px;
+    }
+    
+    #po .container .wrap:hover {
+        background-color: transparent;
+        border-color: #007bff;
+    }
+
+    #install {
+        padding: 30px 0;
+    }
+    
+    #install h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+    
+    #install .container {
+        flex-direction: column;
+    }
+    
+    #install .container .wrap {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+        padding: 15px;
+        border: 2px solid #e0e0e0;
+        border-radius: 8px;
+    }
+    
+    #install .container .item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #install .container .item h3 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    
+    #install .container .item .btn {
+        display: block;
+        width: 80%;
+        margin: 15px auto 0;
+        font-size: 14px;
+    }
+    
+    #install .descr {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 0 15px;
+    }
+    
+    #install .container .wrap:hover {
+        background-color: transparent;
+        border-color: #007bff;
+    }
 }
